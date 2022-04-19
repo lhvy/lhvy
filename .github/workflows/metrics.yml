@@ -16,6 +16,8 @@ jobs:
           base: header, activity, community, repositories, metadata
           config_order: base.header, base.repositories, base.activity+community, isocalendar, music
           config_timezone: Australia/Sydney
+          extras_js: |
+            document.querySelector(".field.calendar")?.remove()
           output_condition: skip-if-only-metadata-changed
           # plugin_isocalendar: yes
           # plugin_isocalendar_duration: half-year
