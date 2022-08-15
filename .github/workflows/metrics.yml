@@ -18,6 +18,7 @@ jobs:
           config_timezone: Australia/Sydney
           extras_js: |
             document.querySelector(".field.calendar")?.remove()
+            document.querySelector(".field.diskUsage")?.remove()
           output_condition: skip-if-only-metadata-changed
           # plugin_isocalendar: yes
           # plugin_isocalendar_duration: half-year
